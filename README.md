@@ -1,7 +1,7 @@
 NPM License Checker
 ===================
 
-**IMPORTANT:** This is a fork of davglass/license-checker repository. It adds the command line option '--packageoverrides [PATH_TO_JSON]', where [PATH_TO_JSON] is the path of a json file that specifies packages, which should be handled with a differenct license identifier. The format is as follows:
+**IMPORTANT:** This is a fork of  [davglass/license-checker](https://github.com/davglass/license-checker) repository. It adds the command line option '--packageoverrides [PATH_TO_JSON]', where [PATH_TO_JSON] is the path of a json file that specifies packages, which should be handled with a differenct license identifier. The format is as follows:
 ``` {
 	"packagename@packageversion": "SPDX-License-Identifier",
 	...
