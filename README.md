@@ -1,7 +1,7 @@
 NPM License Checker
 ===================
 
-IMPORTANT: This is a fork of davglass/license-checker repository. It adds the command line option '--packageoverrides [PATH_TO_JSON]', where [PATH_TO_JSON] is the path of a json file that specifies packages, which should be handled with a differenct license identifier. The format is as follows:
+**IMPORTANT:** This is a fork of davglass/license-checker repository. It adds the command line option '--packageoverrides [PATH_TO_JSON]', where [PATH_TO_JSON] is the path of a json file that specifies packages, which should be handled with a differenct license identifier. The format is as follows:
 ``` {
 	"packagename@packageversion": "SPDX-License-Identifier",
 	...
@@ -10,6 +10,10 @@ IMPORTANT: This is a fork of davglass/license-checker repository. It adds the co
 
 For an example please see *packageOverridesExample.json* in this repo.
 This functionality comes in handy, when you try to automate your license attribution workflow and want to whitelist licenses with --onlyAllow. Some packages don't write the SPDX-identifier in the license field of their package.json, e.g. 'Apache version 2.0' (should be 'Apache-2.0') would be 'Apache*' for license-checker. But whitelisting 'Apache*' could be more risky then assuming this specific package at its specific version as 'Apache-2.0' ;). So, correct packages under your own responsibility/risk.
+
+
+
+---------
 
 
 *As of v17.0.0 the `failOn` and `onlyAllow` arguments take semicolons as delimeters instead of commas. Some license names contain
